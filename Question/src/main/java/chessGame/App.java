@@ -6,8 +6,8 @@ package chessGame;
 public class App {
 
     public static void main(String[] args) {
-        SimpleGame game = new SimpleGame();
-        // ComplexGame game = new ComplextGame;
+        // SimpleGame game = new SimpleGame();
+        ComplexGame game = new ComplexGame();
         game.setup();
         game.play(10);
     }

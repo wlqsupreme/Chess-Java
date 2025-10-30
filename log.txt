@@ -43,3 +43,25 @@ Gradle 是一种用于编译和测试应用程序的构建工具。以下功能�
 * `gradle check`：运行所有单元测试。
 * `gradle run`：运行主应用程序。
 * `gradle tasks`：打印所有支持的任务。
+
+
+
+
+📋 项目完成总结
+✅ 创建的文件：
+ChessPiece.java - 定义棋子接口
+BoardUtils.java - 棋盘边界检查工具
+Knight.java - 骑士类（L型移动）
+Bishop.java - 主教类（对角线移动）
+Queen.java - 皇后类（对角线+直线移动）
+✅ 修改的文件：
+ComplexGame.java - 实现完整游戏逻辑
+App.java - 更新为运行 ComplexGame
+🎮 游戏流程：
+1. setup() → 在棋盘上放置 6 个棋子
+2. play(10) → 执行 10 次移动
+   每次移动：
+   - 随机选择一个棋子
+   - 计算有效移动（排除已占据位置）
+   - 随机选择一个有效位置
+   - 移动棋子并打印日志
