@@ -1,0 +1,10 @@
+chessGame/BishopTest.java
+ chessGame.BishopTest
+chessGame/KnightTest.java
+ chessGame.KnightTest
+chessLib/PositionTest.java
+ chessLib.PositionTest
+chessLib/KnightMoveTest.java
+ chessLib.KnightMoveTest
+chessGame/QueenTest.java
+ chessGame.QueenTest

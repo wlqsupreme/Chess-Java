@@ -65,13 +65,26 @@ public class Bishop implements ChessPiece {
                 
                 // Skip occupied positions (can jump over them, but can't land on them)
                 // Continue to check further positions in this direction
-                if (!occupiedPositions.contains(newPos)) {
+                if (!isPositionOccupied(newPos, occupiedPositions)) {
                     validMoves.add(newPos);
                 }
             }
         }
         
         return validMoves;
+    }
+    
+    /**
+     * Helper method to check if a position is occupied.
+     * Uses manual comparison to avoid relying on hashCode().
+     */
+    private boolean isPositionOccupied(Position pos, Set<Position> occupiedPositions) {
+        for (Position occupied : occupiedPositions) {
+            if (occupied.equals(pos)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 

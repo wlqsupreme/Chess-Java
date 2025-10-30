@@ -42,9 +42,23 @@ public class Knight implements ChessPiece {
         Collection<Position> allMoves = knightMove.validMovesFor(position);
         
         // Filter out occupied positions
+        // Note: Cannot use Set.contains() because Position lacks hashCode()
         return allMoves.stream()
-                .filter(pos -> !occupiedPositions.contains(pos))
+                .filter(pos -> !isPositionOccupied(pos, occupiedPositions))
                 .collect(Collectors.toList());
+    }
+    
+    /**
+     * Helper method to check if a position is occupied.
+     * Uses manual comparison to avoid relying on hashCode().
+     */
+    private boolean isPositionOccupied(Position pos, Set<Position> occupiedPositions) {
+        for (Position occupied : occupiedPositions) {
+            if (occupied.equals(pos)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 

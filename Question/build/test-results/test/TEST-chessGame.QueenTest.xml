@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chessGame.QueenTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-10-30T09:41:33" hostname="顺顺清清" time="0.003">
+  <properties/>
+  <testcase name="testQueenHorizontalMovementWithObstacle()" classname="chessGame.QueenTest" time="0.001"/>
+  <testcase name="testQueenAtEdge()" classname="chessGame.QueenTest" time="0.0"/>
+  <testcase name="testQueenAtCornerWithNoObstacles()" classname="chessGame.QueenTest" time="0.001"/>
+  <testcase name="testQueenWithMultipleObstaclesInDifferentDirections()" classname="chessGame.QueenTest" time="0.0"/>
+  <testcase name="testQueenVerticalMovementWithObstacle()" classname="chessGame.QueenTest" time="0.001"/>
+  <testcase name="testQueenDiagonalMovementWithObstacle()" classname="chessGame.QueenTest" time="0.0"/>
+  <testcase name="testQueenAtCenterWithNoObstacles()" classname="chessGame.QueenTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
