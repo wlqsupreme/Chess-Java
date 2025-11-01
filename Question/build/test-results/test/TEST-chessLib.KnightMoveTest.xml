@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chessLib.KnightMoveTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-10-30T09:41:33" hostname="顺顺清清" time="0.001">
+<testsuite name="chessLib.KnightMoveTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-01T16:32:41" hostname="顺顺清清" time="0.001">
   <properties/>
-  <testcase name="KnightMoveFromInsideBoard()" classname="chessLib.KnightMoveTest" time="0.0"/>
+  <testcase name="KnightMoveFromInsideBoard()" classname="chessLib.KnightMoveTest" time="0.001"/>
   <testcase name="KnightMoveFromCorner()" classname="chessLib.KnightMoveTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

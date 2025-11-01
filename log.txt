@@ -65,3 +65,55 @@ App.java - 更新为运行 ComplexGame
    - 计算有效移动（排除已占据位置）
    - 随机选择一个有效位置
    - 移动棋子并打印日志
+
+
+   
+
+#### 1\. (可选) 查看所有可用的 Gradle 版本
+
+```bash
+sdk list gradle
+```
+
+#### 2\. 安装一个符合项目要求的版本
+
+你的项目要求 Gradle 6.3+。我们就安装一个兼容的、比较稳定的版本，比如 `6.9.4` (这也是我之前提过的)：
+
+```bash
+sdk install gradle 6.9.4
+```
+
+`SDKMAN!` 会自动下载、解压并配置好 Gradle。
+
+#### 3\. 验证安装
+
+安装完成后，运行以下命令来验证 Gradle 是否安装成功：
+
+```bash
+gradle -v
+```
+
+如果你看到了 `Gradle 6.9.4` 的相关信息，那就说明你已经成功安装了！
+
+-----
+
+### 运行项目的完整流程 (复习)
+
+现在你万事俱备了。每次你想运行这个项目时，流程如下：
+
+1.  打开 **Git Bash**。
+2.  `cd` 进入你的项目文件夹（包含 `build.gradle` 的那个）。
+3.  **设置 Java 14 (手动)**：
+    ```bash
+    export JAVA_HOME="/d/software/Java-version/jdk-14.0.2"
+    export PATH="$JAVA_HOME/bin:$PATH"
+    ```
+4.  **设置 Gradle (使用 SDKMAN\!)**：
+    ```bash
+    sdk use gradle 6.9.4
+    ```
+5.  **运行项目**：
+    ```bash
+    gradle check   # 运行单元测试
+    gradle run     # 运行主程序
+    ```

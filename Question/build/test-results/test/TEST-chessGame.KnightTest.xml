@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="chessGame.KnightTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-10-30T09:41:33" hostname="顺顺清清" time="0.006">
+<testsuite name="chessGame.KnightTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-11-01T16:32:41" hostname="顺顺清清" time="0.005">
   <properties/>
   <testcase name="testKnightWithAllPositionsOccupied()" classname="chessGame.KnightTest" time="0.001"/>
   <testcase name="testKnightPositionGetterAndSetter()" classname="chessGame.KnightTest" time="0.001"/>
-  <testcase name="testKnightFilteringDoesNotAffectNonKnightMoves()" classname="chessGame.KnightTest" time="0.0"/>
+  <testcase name="testKnightFilteringDoesNotAffectNonKnightMoves()" classname="chessGame.KnightTest" time="0.001"/>
   <testcase name="testKnightAtCornerWithNoObstacles()" classname="chessGame.KnightTest" time="0.0"/>
   <testcase name="testKnightAtCenterWithNoObstacles()" classname="chessGame.KnightTest" time="0.001"/>
   <testcase name="testKnightFiltersOccupiedPositions()" classname="chessGame.KnightTest" time="0.0"/>
